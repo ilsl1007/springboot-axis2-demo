@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<serviceGroup>
+    <service name="nameService">
+        <parameter name="ServiceObjectSupplier">
+            org.apache.axis2.extensions.spring.receivers.SpringServletContextObjectSupplier
+        </parameter>
+
+        <!-- 暴露的Webservice服务Bean -->
+        <parameter name="SpringBeanName">nameService</parameter>
+
+        <!-- 关闭REST API 请求调用方式 -->
+        <parameter name="disableREST" locked="false">true</parameter>
+
+        <!-- 开启SOAP1.1协议请求 -->
+        <parameter name="disableSOAP11" locked="true">false</parameter>
+
+        <!-- 关闭SOAP1.2协议请求 -->
+        <parameter name="disableSOAP12" locked="true">true</parameter>
+
+    </service>
+</serviceGroup>
