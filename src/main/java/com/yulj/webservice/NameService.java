@@ -12,6 +12,6 @@ import org.springframework.stereotype.Component;
 public class NameService {
 
     public void getName(String name) {
-        System.out.println("你的名字是" + name);
+        System.out.println("your name is " + name);
     }
 }
